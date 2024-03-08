@@ -1,0 +1,36 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack vertically on small screens */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2e2e2e;
+    color: #f1f1f1;
+  }
+
+  @media (min-width: 768px) { /* Adjust for larger screens (tablets and up) */
+    body {
+      flex-direction: row; /* Align horizontally on larger screens */
+    }
+    .error-container {
+      width: 50%; /* Limit container width on larger screens */
+    }
+  }
+
+  .error-container {
+    text-align: center;
+  }
+
+  .error-code {
+    font-size: calc(10rem - 2vw); /* Adjust font size based on viewport width */
+    color: #dc3545; /* Adjust error code color */
+    margin-bottom: 10px;
+  }
+
+  .error-message {
+    font-size: calc(4rem - 1vw); /* Adjust font size based on viewport width */
+    color: #c9c9c9;
+    margin-bottom: 20px;
+  }
